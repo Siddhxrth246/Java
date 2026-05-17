@@ -1,26 +1,28 @@
+
 import java.util.Scanner;
+
+
 public class B {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-         int a = sc.nextInt();
-         long b = sc.nextLong();
-         char c = sc.next().charAt(0);
-         float d = sc.nextFloat();
-         double e = sc.nextDouble();
+        int a;
+        long b;
+        char c;
+        float d;
+        double e;
 
-         System.out.println(a);
-         System.out.println(b);
-         System.out.println(c);
-         System.out.println(d);
-         System.out.println(e);
+        a = sc.nextInt();
+        b = sc.nextLong();
+        c= sc.next().charAt(0);
+        d = sc.nextFloat();
+        e  = sc.nextDouble();
 
-         sc.close();
-         
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        sc.close();
 
-
-
-
-        
     }
-    
 }
