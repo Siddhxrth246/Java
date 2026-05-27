@@ -7,7 +7,7 @@ public class n {
         char X = sc.next().charAt(0);
         int ascii = (int) X;
 
-        if (ascii >= 97 && ascii <= 122){
+        if (ascii >= 97 || ascii <= 122){
             ascii-=32;
 
         }else{
