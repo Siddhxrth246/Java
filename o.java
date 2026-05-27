@@ -3,9 +3,19 @@ public class o {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String exp = sc.next();
-        int a = Integer.parseInt(exp.substring(0));
-        char op = exp.charAt(1);
-        int b = Integer.parseInt(exp.substring(2));
+        int index = 0;
+        char op =' ';
+        for(int i =0; i< exp.length(); i++){
+            char ch = exp.charAt(i);
+            if (ch == '+' || ch == '-' || ch == '*' || ch == '/'){
+                op =ch;
+                index = i;
+                break;
+            }
+        }
+        int a = Integer.parseInt(exp.substring(0, index));
+
+        int b = Integer.parseInt(exp.substring(index+1));
 
         if (op == '+'){
             System.out.println(a + b);
@@ -21,3 +31,4 @@ public class o {
          }
     
     }
+    
